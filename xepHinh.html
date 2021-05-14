@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+
+    </title>
+</head>
+<body>
+<img id="anh1" src="img1.jpg" height="100" width="600" onclick="changeImg1()" /><br>
+<img id="anh2" src="img2.jpg" height="100" width="600" onclick="changeImg2()"/><br>
+<img id="anh3" src="img3.jpg" height="100" width="600" onclick="changeImg3()"/><br>
+<img id="anh4" src="img5.jpg" height="108" width="600" onclick="changeImg4()"/><br>
+<img id="anh5" src="img4.jpg" height="100" width="600" onclick="changeImg5()"/><br>
+<p id="bao"></p>
+<script>
+    let pic1 = document.getElementById('anh1');
+    let pic2 = document.getElementById('anh2');
+    let pic3 = document.getElementById('anh3');
+    let pic4 = document.getElementById('anh4');
+    let pic5 = document.getElementById('anh5');
+    function changeImg1(){
+      let pic1 = document.getElementById('anh1');
+      let a = Math.round(Math.random() * 2)+ 2 ;
+      pic1.src = "img" + a + ".jpg";
+      console.log(a);check()
+    }
+  function  changeImg2() {
+      let pic2 = document.getElementById('anh2');
+      let b = Math.round(Math.random() * 2)+ 2 ;
+      pic2.src="img" + b + ".jpg";
+      console.log(b);check()
+    }
+  function  changeImg3() {
+      let pic3 = document.getElementById('anh3');
+      let c = Math.round(Math.random() * 2) + 2;
+      pic3.src = "img" + c + ".jpg";
+      check()
+  }
+  function  changeImg4() {
+      let pic4 = document.getElementById('anh4');
+      let d = Math.round(Math.random() * 2)+2;
+      pic4.src = "img" + d + ".jpg";
+      check()
+  }
+  function  changeImg5() {
+      let pic5 = document.getElementById('anh5');
+      let e = Math.round(Math.random() * 2)+2;
+      pic5.src = "img" + e + ".jpg";
+      check()
+  }
+function check() {
+    if (pic1.src == pic2.src && pic2.src == pic3.src && pic3.src == pic4.src && pic1.src == pic5.src) {
+        document.getElementById("bao").innerHTML="CHIEN THANG"
+    }}
+</script>
+
+</body>
+</html>
