@@ -1,4 +1,34 @@
+C1 chinh xac nhat
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="checkbox" id="cb1" onclick="check1()">Good<br>
+<input type="checkbox" id="cb2" onclick="check2()">Fast<br>
+<input type="checkbox" id="cb3" onclick="check3()">Cheap<br>
+<script>
+    function check1(){
+     if (document.getElementById("cb1").checked==true&&document.getElementById("cb2").checked==true&&document.getElementById("cb3").checked==true){
+         let a = Math.round(Math.random());
+         if (a==0){document.getElementById("cb2").checked=false} else {document.getElementById("cb3").checked=false}
+     }}
+    function check2(){
+        if (document.getElementById("cb1").checked==true&&document.getElementById("cb2").checked==true&&document.getElementById("cb3").checked==true){
+            let a = Math.round(Math.random());
+            if (a==0){document.getElementById("cb1").checked=false} else {document.getElementById("cb3").checked=false}
+        }}
+    function check3(){
+        if (document.getElementById("cb1").checked==true&&document.getElementById("cb2").checked==true&&document.getElementById("cb3").checked==true){
+            let a = Math.round(Math.random());
+            if (a==0){document.getElementById("cb1").checked=false} else {document.getElementById("cb2").checked=false}
+        }}
+</script>
+</body>
+</html>
+C2: <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
